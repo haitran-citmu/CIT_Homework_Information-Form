@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="google-forms.png" type="image/png">
+</head>
+<body>
+    <h1>Information Form</h1>
+    <form action="submit_form.html" method="GET" target="_blank">
+        <label for="name">Full Name</label>
+        <br><input type="text" name="username" id="name" placeholder="Enter your full name" required><br><br>
+        
+        <label for="email">E-mail:</label>
+        <br><input type="email" name="email" id="email" placeholder="Enter your email" required><br><br>
+        
+        <label for="password">Password:</label>
+        <br><input type="password" name="password" id="password" placeholder="Enter your password" minlength="8" required><br><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <br><input type="date" name="date" id="dob" required><br><br>
+        
+        <label>Gender</label>
+        <br><input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label><br><br>
+        
+        <label>Hobby</label>
+        <br><input type="checkbox" name="hobby" value="reading_books">
+        <label>Reading Books</label>
+        <input type="checkbox" name="hobby" value="travelling">
+        <label>Travelling</label>
+        <input type="checkbox" name="hobby" value="listening_music">
+        <label>Listening to Music</label><br><br>
+        
+        <label for="avatar">Upload Avatar:</label>
+        <br><input type="file" id="avatar" name="avatar" accept="image/*"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
